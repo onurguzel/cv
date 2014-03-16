@@ -1,0 +1,145 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{tabularx}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+\def\name{Onur Güzel}
+\def\cv{Curriculum Vitae}
+
+\author{\name}
+\title{\cv}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {programming, system administration, linux, open source},
+  pdftitle = {\name: \cv},
+  pdfsubject = {\cv},
+  pdfpagemode = UseNone
+}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large\vspace{-10pt}}
+\subsectionfont{\rmfamily\mdseries\itshape\large\vspace{-5pt}}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\begin{flushright}
+\Huge \name
+\end{flushright}
+
+\begin{center}
+\href{http://www.onurguzel.com/}{\tt onurguzel.com} - 
+\href{mailto:guzelmu@itu.edu.tr}{\tt guzelmu@itu.edu.tr} - 
+\href{http://onurguzel.com/twitter}{\tt @onurguzel} - 
+\href{http://onurguzel.com/github}{\tt github} - 
+\href{http://linkedin.com/in/guzelmu}{\tt linkedin} - 
+\href{http://www.ohloh.net/accounts/onurguzel}{\tt ohloh}
+\end{center}
+
+\section*{About}
+I'm a senior engineering student who loves programming and open source software. I enjoy learning new skills about trending web technologies.
+
+\section*{Personal}
+Born on November $4^{th}$, 1989 in Çanakkale, Turkey. Citizen of Republic of Turkey. Single.
+
+\section*{Education}
+\begin{itemize}
+\item
+\begin{tabularx}{\textwidth}{ l X r }
+- & BS, Physics Engineering & 2007 - 2015 expected \\
+& \textbf{Istanbul Technical University} & \href{http://www.itu.edu.tr/en/}{itu.edu.tr}
+\end{tabularx}
+\item
+\begin{tabularx}{\textwidth}{l X r}
+- & \textbf{Çanakkale Milli Piyango Anatolian High School} & 2003 - 2007
+\end{tabularx}
+\end{itemize}
+
+\section*{Experience}
+\subsection*{Employment}
+\begin{itemize}
+\item
+\begin{tabularx}{\textwidth}{l X r}
+- & \textbf{Google} Summer of Code Student & April, 2014 - September, 2014\\
+& \textbf{Fedora} Project & \href{http://fedoraproject.org/}{fedoraproject.org}
+\end{tabularx}
+\item
+\begin{tabularx}{\textwidth}{l X r}
+- & Contributor & March, 2010 - January, 2012\\
+& \textbf{Pardus} GNU/Linux & \href{http://www.pardus.org.tr/}{pardus.org.tr}
+\end{tabularx}
+\item
+\begin{tabularx}{\textwidth}{l X r}
+- & Intern at \textbf{Pardus} Project & August 2011\\
+& Center of Research for Advanced Technologies of Informatics and Security (\textbf{BİLGEM}), The Scientific and Technological Research Council of Turkey (\textbf{TÜBİTAK}) & \href{http://bilgem.tubitak.gov.tr}{bilgem.tubitak.gov.tr}
+\end{tabularx}
+\item
+\begin{tabularx}{\textwidth}{l X r}
+- & Co-founder, Software developer and System Administrator & September, 2009 - present\\
+& \textbf{İTÜ24} - Online Newspaper of Istanbul Technical University & \href{http://itu24.com}{itu24.com}
+\end{tabularx}
+\end{itemize}
+
+\subsection*{Skills}
+\begin{tabularx}{\textwidth}{l l X}
+- & Languages: & PHP, Python, Java\\
+- & Databases: & MySQL, PostgreSQL, MongoDB, Memcache\\
+- & Frameworks and SDKs: & Django, CakePHP, Android SDK\\
+- & Other: & git, vim, nginx, php-fpm, gunicorn, supervisord, subversion
+\end{tabularx}
+
+\subsection*{Talks \& Presentations}
+\begin{tabularx}{\textwidth}{l X r}
+- & Communication Between Computers and Electronic Circuits & September $5^{th}$, 2013\\
+& \href{http://www.slideshare.net/onurguzel/bilgisayar-ve-elektronik}{slideshare} & Istanbul Technical University\\
+- & Python for Physics & February $2^{rd}$, 2012\\
+& \href{http://www.slideshare.net/onurguzel/fizik-icin-python}{slideshare} & Istanbul Technical University
+\end{tabularx}
+
+\subsection*{Honors \& Awards}
+\begin{tabularx}{\textwidth}{l X r}
+- & Certificate of Appreciation & 2010\\
+& UEKAE, TÜBİTAK
+\end{tabularx}
+
+\vspace{10pt}
+\footnotesize {\color[gray]{0.25} Last updated: March $15^{th}$, 2014. Latest version of this document can always be found at \href{http://onurguzel.com/cv}{\color{black}onurguzel.com/cv}}
+\end{document}
