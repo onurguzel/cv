@@ -13,11 +13,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[left=2cm,right=2cm,top=1.5cm,bottom=1.5cm]{geometry}
 
 \usepackage{hyperref}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
 
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
@@ -61,19 +63,19 @@
 \begin{document}
 \pagenumbering{gobble}
 
-\begin{flushright}
-\Huge \name
-\end{flushright}
-
-\begin{center}
-\href{http://www.onurguzel.com/}{\tt onurguzel.com} - 
+\begin{tabularx}{\textwidth}{ X r }
+\multirow{6}{*}{\includegraphics[scale=0.4]{photo}} & \\[0.5cm]
+ & \Huge \name\\
+ & \href{http://www.onurguzel.com/}{\tt onurguzel.com} - 
 \href{mailto:guzelmu@gmail.com}{\tt guzelmu@gmail.com} - 
-\href{http://onurguzel.com/twitter}{\tt @onurguzel} - 
-\href{http://onurguzel.com/github}{\tt github} - 
+\href{http://onurguzel.com/twitter}{\tt @onurguzel}\\
+ & \href{http://onurguzel.com/github}{\tt github} - 
 \href{http://linkedin.com/in/guzelmu}{\tt linkedin} - 
 \href{http://www.slideshare.net/onurguzel}{\tt slideshare} - 
-\href{http://www.ohloh.net/accounts/onurguzel}{\tt ohloh}
-\end{center}
+\href{http://www.ohloh.net/accounts/onurguzel}{\tt ohloh}\\
+ & tel: +90 536 414 4889\\
+ & \\[0.5cm]
+\end{tabularx}
 
 \section*{About}
 I'm an engineer who loves programming and open source software. I enjoy learning new skills about trending web technologies. Check out my profiles above.\\[10pt]
@@ -142,5 +144,5 @@ Born on November $4^{th}$, 1989 in Çanakkale, Turkey. Citizen of Republic of Tu
 \end{tabularx}
 
 \vspace{10pt}
-\footnotesize {\color[gray]{0.25} Last updated: March $20^{th}$, 2016. Latest version of this document can always be found at \href{http://onurguzel.com/cv}{\color{black}onurguzel.com/cv}}
+\footnotesize {\color[gray]{0.25} Last updated: December $12^{th}$, 2016. Latest version of this document can always be found at \href{http://onurguzel.com/cv}{\color{black}onurguzel.com/cv}}
 \end{document}
